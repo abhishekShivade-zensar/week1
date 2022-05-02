@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="biggerNumber"></h1>
+    <h1 id="ascendingOrder"></h1>
+    <script>
+        var firstNumber = prompt("Enter the first number");
+        firstNumber = parseInt(firstNumber);
+        var secondNumber = prompt("Enter the second number");
+        secondNumber = parseInt(secondNumber);
+        var theTotal = firstNumber + secondNumber;
+        document.write(firstNumber + " added to "+ secondNumber + " equals " + theTotal);
+
+        if(firstNumber>secondNumber){
+            document.getElementById('biggerNumber').innerHTML="firstNumber is bigger & the number is "+ firstNumber;
+        }else{
+            document.getElementById('biggerNumber').innerHTML="secondNumber is bigger & the number is "+ secondNumber;
+        }
+
+        if(firstNumber<secondNumber){
+            document.getElementById('ascendingOrder').innerHTML="Numbers in ascending order "+ firstNumber +" , "+ secondNumber;
+        }else{
+            document.getElementById('ascendingOrder').innerHTML="Numbers in ascending order "+ secondNumber +" , "+ firstNumber;
+        }
+    </script>
+</body>
+</html>
+
+
+<!-- 
+<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN” 
+“http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd”>
+<html xmlns=”http://www.w3.org/1999/xhtml”>
+<script language=”JavaScript” type=”text/javascript”>
+var firstNumber = prompt(“Enter the first number”,””);
+var secondNumber = prompt(“Enter the second number”,””);
+var theTotal = firstNumber + secondNumber;
+document.write(firstNumber + “ added to “ + secondNumber + “ equals “ +
+   theTotal);
+</script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN”“http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd”>
+<html xmlns=”http://www.w3.org/1999/xhtml”>
+
+<head>
+    <script language=”JavaScript” type=”text/javascript”>
+        var firstNumber = prompt(“Enter the first number”,””);
+        var secondNumber = prompt(“Enter the second number”,””);
+        var theTotal = firstNumber + secondNumber;
+        document.write(firstNumber + “ added to “ + secondNumber + “ equals “ + theTotal);
+    </script>
+</head>
+<body>
+</body>
+</html> -->
